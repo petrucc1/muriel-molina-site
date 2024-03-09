@@ -31,22 +31,22 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cursos</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Cursos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Primeiro curso</a></li>
+                                <li><a class="dropdown-item" href="#">Segundo curso</a></li>
+                                <li><a class="dropdown-item" href="#">Terceiro curso</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contato</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Ebooks
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><button>Matricule-se</button></a>
                         </li>
                     </ul>
                 </div>
@@ -89,55 +89,90 @@
     </div>
 
     <div id="services-cards" class="container">
-        <h2>O que eu faço</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis error labore ducimus accusamus, aperiam
-            vitae eius, reprehenderit itaque officiis, architecto inventore in officia vero id obcaecati est repellat
-            ipsum aliquid?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolore beatae eos dicta sint iusto, aperiam
-            amet necessitatibus asperiores enim neque alias esse quae, reprehenderit molestias libero minima porro ab!
-        </p>
+        <div class="container-text">
+            <h2 class="h2 text-center">O que eu faço</h2>
+            <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis error labore ducimus accusamus, aperiam
+                vitae eius, reprehenderit itaque officiis, architecto inventore in officia vero id obcaecati est repellat
+                ipsum aliquid?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolore beatae eos dicta sint iusto, aperiam
+                amet necessitatibus asperiores enim neque alias esse quae, reprehenderit molestias libero minima porro ab!
+            </p>
+        </div>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+            <div class="col w-25">
                 <div class="card h-100">
                     <img src="./images/elena-mozhvilo-rjzE8tbBVqw-unsplash.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Tarot</h5>
+                        <h4 class="card-title">Tarot</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col w-25">
                 <div class="card h-100">
                     <img src="./images/elena-mozhvilo-rjzE8tbBVqw-unsplash.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Meditação</h5>
+                        <h4 class="card-title">Meditação</h4>
                         <p class="card-text">This is a short card.</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col w-25">
                 <div class="card h-100">
                     <img src="./images/elena-mozhvilo-rjzE8tbBVqw-unsplash.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Consulta Terapêutica</h5>
+                        <h4 class="card-title">Magia</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                             additional content.</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col w-25">
                 <div class="card h-100">
                     <img src="./images/elena-mozhvilo-rjzE8tbBVqw-unsplash.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Magia</h5>
+                        <h4 class="card-title">Consulta Terapêutica</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="courses-info" class="container">
+        <h2 class="h2 text-center mb-2">Estrutura dos cursos</h2>
+        <div class="row justify-content-center">
+            <div class="col-sm-3">
+              <div class="card radius-card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus hic ipsum qui! Atque odio sunt esse tempore.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card radius-card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus hic ipsum qui! Atque odio sunt esse tempore.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card radius-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus hic ipsum qui! Atque odio sunt esse tempore.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+          </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

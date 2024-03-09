@@ -6,3 +6,24 @@ body {
 div.container:not(#nav, #carousel) {
     padding-top: 80px;
 }
+
+nav {
+    padding: 30px !important;
+}
+
+h2 {
+    padding-bottom: 50px !important;
+}
+
+.container-text {
+    margin-bottom: 50px;
+}
+
+.radius-card {
+    border-radius: 30px !important;
+    -webkit-box-shadow: 0px 0px 32px -3px rgba(118,53,210,1);
+    -moz-box-shadow: 0px 0px 32px -3px rgba(118,53,210,1);
+    box-shadow: 0px 0px 32px -3px rgba(118,53,210,1);
+    margin-right: 50px;
+    padding: 10px;
+}
