@@ -17,50 +17,41 @@
 
 <body>
 
-    <div id="nav" class="container">
+    <div id="nav" class="container-fluid fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <div>
-                    <a class="navbar-brand" href="#">Muriel Molina</a>
-                </div>
 
                 <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
+                    <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                        <a class="navbar-brand" href="#">Muriel Molina</a>
+                        <ul class="nav nav-pills">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="#services-cards">First</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading2">Second</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Cursos
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Primeiro curso</a></li>
-                                    <li><a class="dropdown-item" href="#">Segundo curso</a></li>
-                                    <li><a class="dropdown-item" href="#">Terceiro curso</a></li>
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">Dropdown</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contato</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><button>Matricule-se</button></a>
-                            </li>
                         </ul>
-                    </div>
-
+                    </nav>
                 </div>
+
             </div>
         </nav>
     </div>
 
-    <div id="carousel" class="container">
+    <div id="carousel" class="container-fluid">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -94,7 +85,7 @@
         </div>
     </div>
 
-    <div id="services-cards" class="container">
+    <div id="services-cards" class="container-fluid m-0 p-0">
         <div class="container-text">
             <h2 class="h2 text-center">O que eu faço</h2>
             <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis error labore
@@ -152,7 +143,7 @@
         </div>
     </div>
 
-    <div id="courses-info" class="container">
+    <div id="courses-info" class="container-fluid">
         <h2 class="h2 text-center mb-2">Estrutura dos cursos</h2>
         <div class="row justify-content-center">
             <div class="col-sm-3">
@@ -188,33 +179,22 @@
         </div>
     </div>
 
-    <div id="courses" class="container">
-        <div class="card fade-in">
-            <h5 class="card-header">Featured</h5>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card fade-in text-center">
-            <h5 class="card-header">Featured</h5>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card fade-in text-end">
-            <h5 class="card-header">Featured</h5>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+    <div id="modules-course" class="container-fluid">
+        <h2 class="h2 text-center mb-2">Módulos do curso</h2>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
